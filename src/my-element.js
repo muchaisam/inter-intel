@@ -28,7 +28,7 @@ class MyElement extends LitElement {
         title: "The Deer Park",
         content: "Bring lots of carrots to feed the deers.",
         location:
-          "https://www.google.com/maps/place/Marselisborg+Deer+Park/@56.120413,10.2177093,17z/data=!3m1!4b1!4m5!3m4!1s0x464c408a413ba2cd:0x3fdccd8e44babed0!8m2!3d56.12041!4d10.219898"
+          ""
       },
       {
         url:
@@ -37,7 +37,7 @@ class MyElement extends LitElement {
         content:
           "ARoS is the main art museum in Aarhus.",
         location:
-          "https://www.google.com/maps/place/ARoS+Aarhus+Art+Museum/@56.153922,10.1975273,17z/data=!3m1!4b1!4m5!3m4!1s0x464c3f92c28f6a05:0x1ea607bf8e626088!8m2!3d56.153919!4d10.199716"
+          ""
       },
 
       {
@@ -46,7 +46,7 @@ class MyElement extends LitElement {
         title: "Botanical Garden",
         content: "One of the largest parks in Aarhus",
         location:
-          "https://www.google.com/maps/place/Greenhouses+in+the+Botanical+Garden/@56.1537794,10.2049282,15z/data=!4m8!1m2!2m1!1saarhus+botanical+garden!3m4!1s0x464c3febb8e5af53:0x8f7a55ebc4dac12d!8m2!3d56.1601577!4d10.1934296"
+          ""
       }
     ];
   }
