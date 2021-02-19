@@ -28,4 +28,4 @@ My apologies for not displaying them with cards due to my problem with section t
 </p>
 
 
-##### All in all, this was a good test and I need to learn more on polymer and bulma. ####
+##### All in all, this was a good test, I appreciate it and it showed me I need to sharpen my skills on javascript and learn more on polymer and bulma. Cheers. ####
