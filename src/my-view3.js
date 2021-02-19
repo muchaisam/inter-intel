@@ -8,13 +8,40 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
-import {LitElement, html} from 'lit-element';
+import { LitElement, html, css } from 'lit-element';
 
-export class MyView3 extends LitElement{
-  render(){
+class MyView3 extends LitElement {
+  static get properties() {
+    return {
+      data: { type: Array }
+    }
+  }
+
+  constructor() {
+    super();
+    this.data = [];
+  }
+
+  firstUpdated(changedProperties) {
+    fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
+      .then((r) => r.json())
+      .then((r) => {
+        this.data = r.results;
+      });
+  }
+
+  render() {
     return html`
-    <p>text</p>
-    `;
+        <ul>
+          ${this.data.map(
+            (todo) => html`
+            <li>${todo.userd}</li>
+            <li>${todo.id}</li>
+            <li>${todo.title}</li>
+            <li>${todo.completed}</li>
+          `)}
+        </ul>
+      `;
   }
 }
-customElements.define('my-view3', MyView3)
+customElements.define('my-view3', MyView3);
