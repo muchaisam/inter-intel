@@ -9,8 +9,6 @@
  */
 
 import { LitElement, html, css } from 'lit-element';
-import './shared.js';
-
 
 class MyElement extends LitElement {
   static get properties() {
@@ -24,27 +22,27 @@ class MyElement extends LitElement {
     this.data = [
       {
         url:
-          "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&fit=crop&w=667&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-        title: "The Deer Park",
-        content: "Bring lots of carrots to feed the deers.",
+          "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlcGhhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        title: "Elephants",
+        content: "Majestic Beings",
         location:
-          ""
+          "#"
       },
       {
         url:
-          "https://images.unsplash.com/photo-1595146463222-19603449c6af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400",
-        title: "ARoS Aarhus Kunstmuseum",
+          "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGxpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        title: "Lion",
         content:
-          "ARoS is the main art museum in Aarhus.",
+          "King of the Jungle",
         location:
-          ""
+          "#"
       },
 
       {
         url:
-          "https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&fit=crop&w=311&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-        title: "Botanical Garden",
-        content: "One of the largest parks in Aarhus",
+          "https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8d2lsZGxpZmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        title: "Fox",
+        content: "As clever as a fox",
         location:
           ""
       }
@@ -149,9 +147,7 @@ class MyElement extends LitElement {
                 <p class="card__text">${card.content}</p>
                 <a
                   class="card__button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="${card.location}"
+                  
                 >
                   Check location
                 </a>
